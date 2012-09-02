@@ -2,9 +2,7 @@
 public abstract class Shape {
 	
 	protected String shapeType;
-	public Shape() {
-		
-	}
+	
 	public String getShape() {
 		return shapeType;
 	}
