@@ -8,7 +8,7 @@ public class Database {
 		intializeDb();
 	}
 
-	public ArrayList<Shape> intializeDb() {
+	private ArrayList<Shape> intializeDb() {
 		entries.add(0, new Square());
 		entries.add(1, new Circle());
 		entries.add(2, new Triangle());
@@ -20,11 +20,8 @@ public class Database {
 	}
 
 	public void displayDbContent() {
-		int index = 0;
-		while (index < entries.size()) {
-			System.out.println("Database entry number " + index
-					+ " contains the shape " + entries.get(index).getShape());
-			index++;
+		for (int index = 0; index < entries.size(); index++) {
+			System.out.println("Database entry number " + index + entries.get(index).display());
 		}
 	}
 }

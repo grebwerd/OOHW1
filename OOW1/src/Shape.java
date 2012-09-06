@@ -1,13 +1,17 @@
-
 public abstract class Shape {
-	
-	protected String shapeType;
-	
-	public String getShape() {
+
+	private String shapeType;
+
+	protected String getShape() {
 		return shapeType;
 	}
-	
-	public void setShapeType(String shapeType) {
+
+	protected void setShapeType(String shapeType) {
 		this.shapeType = shapeType;
+	}
+	
+	protected String display() {
+		String display = " shape is a " + getShape();
+		return display;
 	}
 }

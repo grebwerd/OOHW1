@@ -1,7 +1,6 @@
-
 public class Square extends Shape {
 
-	public Square () {
+	public Square() {
 		setShapeType("Square");
 	}
 }
